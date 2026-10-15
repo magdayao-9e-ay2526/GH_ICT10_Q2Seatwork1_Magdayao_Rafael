@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Pyscript CDN -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>Candidate Verification System</title>
+</head>
+<body>
+    <h1>GLEE CLUB CHECKER</h1>
+    <p>Candidate Verification System</p>
+    <form>
+        <label for="firstname"></label><br>
+        <input type="text" id="student_first" placeholder="Enter your first name"><br><br>
+        
+        <label for="lastname"></label><br>
+        <input type="text" id="student_last" placeholder="Enter your last name"><br>
+
+        <button py-click="view_member" value="Search">ENTER</button>
+    </form>
+
+    <div id="output"></div>
+    <py-script src="main.py"></py-script>
+
+    <footer>
+        © 2026 Glee Club | Grade 10 | 2nd Quarter
+    </footer>
+</body>
+</html>

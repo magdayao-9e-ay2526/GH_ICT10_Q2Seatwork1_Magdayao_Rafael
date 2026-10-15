@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #25101c, #0c0c10);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* TITLE */
+
+h1 {
+    color: #ffcc33;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-top: 100px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 12px #ff9900;
+}
+
+body > p {
+    color: #bbbbbb;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+
+form {
+    background: #1b1b20;
+    width: 90%;
+    max-width: 350px;
+    padding: 30px;
+    border: 1px solid #e4ac20;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    display: block;
+    text-align: left;
+    color: #ffcc66;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+/* INPUT FIELDS */
+
+input {
+    width: 100%;
+    padding: 12px;
+    background: #101014;
+    color: white;
+    border: 1px solid #373737;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ffcc33;
+    box-shadow: 0 0 8px #ffcc3366;
+}
+
+input::placeholder {
+    color: #888888;
+}
+
+/* ENTER BUTTON */
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(#c91330, #860d25);
+    color: #ffcc66;
+    border: 1px solid #ffcc33;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e21d3c;
+    box-shadow: 0 0 12px #ff3344;
+}
+
+/* RESULT BOX */
+
+#result {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+
+    width: 90%;
+    max-width: 350px;
+    min-height: 65px;
+    margin: 20px auto;
+    padding: 18px;
+
+    background: #171c20;
+    color: #ffcc33;
+
+    border-left: 4px solid #00eaff;
+    border-radius: 6px;
+
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    background: #8e0e27;
+    border-top: 3px solid #ffcc33;
+    padding: 16px;
+    color: #f1c9d0;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 23px;
+        margin-top: 70px;
+    }
+
+    form {
+        padding: 22px;
+    }
+}
